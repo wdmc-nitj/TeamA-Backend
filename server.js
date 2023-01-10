@@ -17,7 +17,7 @@ dotenv.config({ path: "./.env" });
 //connection to database------------------------------------------->
 
 mongoose
-    .connect(process.env.URI, {
+    .connect('mongodb://localhost:27017/goodlivesTest', {
         useNewUrlParser: true,
     })
     .then(() => {
