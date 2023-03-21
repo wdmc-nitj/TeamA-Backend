@@ -16,6 +16,7 @@ const footerRouter = require("./routes/footer");
 const aboutRouter = require("./routes/about");
 const testimonialRouter = require("./routes/testimonial");
 const clubRouter = require("./routes/club");
+const hostelRouter = require("./routes/hostel");
 
 const bodyParser = require("body-parser");
 //----------------------------------->
@@ -49,6 +50,7 @@ app.use("/footer", footerRouter);
 app.use("/about", aboutRouter);
 app.use("/testimonial", testimonialRouter);
 app.use("/club", clubRouter);
+app.use("/hostel", hostelRouter);
 
 //Export----------------------------->
 module.exports = app;
